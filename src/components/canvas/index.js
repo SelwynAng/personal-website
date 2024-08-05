@@ -1,5 +1,5 @@
-import GyroscopeCanvas from "./Gyroscope";
+import BoothCanvas from "./Booth";
 import BallCanvas from "./Ball";
 import ComputersCanvas from "./Computers";
 
-export { GyroscopeCanvas, BallCanvas, ComputersCanvas };
+export { BoothCanvas, BallCanvas, ComputersCanvas };

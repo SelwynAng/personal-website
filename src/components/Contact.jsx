@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 
 import { styles } from "../styles";
-import { GyroscopeCanvas } from "./canvas";
+import { BoothCanvas } from "./canvas";
 import SectionWrapper from "../components/hoc/SectionWrapper";
 import { slideIn } from "../utils/motion";
 
@@ -127,7 +127,7 @@ const Contact = () => {
         variants={slideIn("right", "tween", 0.2, 1)}
         className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
       >
-        <GyroscopeCanvas />
+        <BoothCanvas />
       </motion.div>
     </div>
   );
