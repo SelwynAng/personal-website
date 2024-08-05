@@ -29,6 +29,12 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    if (!form.name || !form.email || !form.message) {
+      alert("Name, email, and message fields cannot be empty.");
+      return;
+    }
+    
     setLoading(true);
 
     emailjs
