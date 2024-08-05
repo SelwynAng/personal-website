@@ -41,7 +41,7 @@ import {
       icon: web,
     },
     {
-      title: "Security Enthuiast",
+      title: "Security Enthusiast",
       icon: mobile,
     },
     {
