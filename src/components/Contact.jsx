@@ -6,6 +6,7 @@ import { styles } from "../styles";
 import { BoothCanvas } from "./canvas";
 import SectionWrapper from "../components/hoc/SectionWrapper";
 import { slideIn } from "../utils/motion";
+import { links } from "../constants/index";
 
 const Contact = () => {
   const formRef = useRef();
@@ -34,7 +35,7 @@ const Contact = () => {
       alert("Name, email, and message fields cannot be empty.");
       return;
     }
-    
+
     setLoading(true);
 
     emailjs
@@ -79,7 +80,17 @@ const Contact = () => {
         className='flex-[0.75] bg-[#24221e] p-8 rounded-2xl'
       >
         <p className={styles.sectionSubText}>Get in touch</p>
-        <h3 className={styles.sectionHeadText}>Contact</h3>
+        <h3 className={styles.sectionHeadText}>Contact Me</h3>
+
+        <p>Feel free to connect with me via the following links or drop me an email below! </p>
+        <br />
+        {links.map((link) => (
+          <>
+            <a href={link.link} className="text-tertiary">{link.name}</a>
+            <br />
+          </>
+        ))}
+
 
         <form
           ref={formRef}

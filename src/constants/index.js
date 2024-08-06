@@ -168,5 +168,16 @@ import {
       source_code_link: "https://devpost.com/software/knock-it-down",
     },
   ];
+
+  const links = [
+    {
+      name: "LinkedIn",
+      link: "https://www.linkedin.com/in/selwyn-ang/"
+    },
+    {
+      name: "GitHub",
+      link: "https://github.com/SelwynAng"
+    },
+  ]
   
-  export { services, technologies, experiences, projects };
+  export { services, technologies, experiences, projects, links };
